@@ -1,0 +1,292 @@
+*,html{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden; 
+    background-color: rgba(255, 253, 151, 0.955);
+}   
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(229, 234, 240);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: #0b2447;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+.hamburger{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+    list-style-type: none;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    display: block;
+    color: #000;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 20px;
+    transition: .2s;
+}
+.nav-bar ul li a::after{
+    display: block;
+    content: '';
+    border-bottom: 3px solid #000;
+    transform: scale(0);
+    transition: transform 250ms ease-in-out;
+}
+.nav-bar ul li a:hover::after{
+    transform: scale(1);
+}
+section{
+    height: 700px;
+    color: #fff;
+    background-image: url(Homepage\ -\ Google\ Chrome\ 4_29_2024\ 6_45_08\ PM.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.headertag{
+    line-height: 90px;
+    font-size: 40px;
+    font-weight: bold;
+    height: 560px;
+    padding: 80px 100px;
+}
+.statement{
+    background-color: gold;
+    width: 90%;
+    margin: -40px 60px;
+    height: 950px;
+}
+.missionstatement h1{
+    padding: 15px 0px;
+}
+.missionstatement{
+    padding: 30px 50px; 
+    font-size: 30px;
+    line-height: 45px;
+    text-transform: capitalize;
+}
+.vissionstatement h1{
+    padding: 15px 0px;
+}
+.vissionstatement{
+    background-color: #0b2447;
+    padding: 30px 50px;                                                                                                                                                                                                                          
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 30px;
+    line-height: 45px;
+}
+.academicrecords h1{
+    font-size: 50px;
+    padding: 15px 50px;
+}
+table{
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0px 50px;
+    text-align: center;
+    font-size: 30px;
+}
+tr,th,td{
+    border: 2px solid #0b2447;
+    padding: 8px 15px;
+}
+.imagesection h1{
+    padding: 50px 0px;
+    font-size: 5rem;
+    text-align: center;
+}
+.imagesection{
+    padding: 20px 20px;
+    line-height: 40px;
+    background-color: whitesmoke;
+    height: 2700px;
+}
+.images img{
+    height: 406px;
+    justify-content: space-between;
+
+}
+.img1{
+    width: 1200px;
+    padding-left: 10px;
+}
+.img2{
+    width: 864px;
+    padding-left: 5px;
+}
+.img3{
+    width: 99%;
+}
+.img4{
+    width: 1050px;
+}
+.img5{
+    width: 98%;
+}
+.img6{
+    width: 100%;
+    height: 50px;
+}
+.awards{
+    height: 700px;
+}
+.awards h1{
+    margin: 20px 0px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 5rem;
+    background-color: #0b2447;
+    color: #fff;
+    padding: 50px 0px;
+}
+.awards img{
+    background-color: #0b2447;
+    padding: 10px 20px;
+    width: 100%;
+} 
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #0b2447;
+    color: #fff;
+    margin-top: 4530px;
+    padding: 20px 0px;
+    text-align: center;
+    font-size: 30px;
+}
+@media screen and (max-width:600px){
+    .hamburger{
+        display : block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 28px;
+        height: 3px;
+        background-color: #0b2447;
+        margin: 6px 30px;
+    }
+    .nav-bar{
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #fff;
+        box-shadow: 0 16px 8px -9px rgba(191,191,191);
+        transition: .5s;
+        overflow: hidden;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        text-align: center;
+        margin: 80px auto 0 auto;
+        transition: .5s;
+        opacity: 0;
+    }
+    .nav-bar.active{
+        height: 450px;
+    }
+    .nav-bar ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+    .headertag{
+        line-height: 60px;
+        font-size: 20px;
+        font-weight: bold;
+        height: 560px;
+        padding: 30px 20px;
+    }
+    section{
+        height: 450px;
+        width: 100%;
+    }
+    .imagesection h1{
+        padding: 50px 0px;
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .imagesection{
+        padding: 20px 10px;
+        line-height: 50px;
+        background-color: whitesmoke;
+        height: auto;
+    }
+    .images img{
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+    
+    }
+    .statement{
+        background-color: gold;
+        width: 85%;
+        margin: -40px 40px;
+        height: 1300px;
+    }
+    .missionstatement h1{
+        padding: 15px 0px;
+    }
+    .missionstatement{
+        padding: 15px 15px; 
+        font-size: 25px;
+        line-height: 45px;
+        text-transform: capitalize;
+    }
+    .vissionstatement h1{
+        padding: 15px 0px;
+    }
+    .vissionstatement{
+        background-color: #0b2447;
+        padding: 30px 50px;                                                                                                                                                                                                                          
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .academicrecords h1{
+        font-size: 2.8rem;
+       padding: 10px 10px;
+       
+    }
+    .academicrecords{
+        padding-right: 45px;
+
+    }
+    table{
+        margin: 15px 10px;
+    }
+    
+    .awards h1{
+        font-size: 3.8rem;
+    }
+    footer{
+    width: 100%;
+    height: auto;
+    background-color: #0b2447;
+    color: #fff;
+    margin-top: 1150px;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 20px;
+    }
+}
